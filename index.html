@@ -2,18 +2,19 @@
 <html lang="eng">
 
 <head>
-    <title>Table test</title>
+    <title>Blow Your Top Fireworks</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 
 <body>
     <header>
-        <h1>
-            Table Test
-        </h1>
+        <h1 class="header">Blow The Roof Off Fireworks!</h1>
+        <h2 class="header">Contact Us</h2>
     </header>
     <div>
-        <table style="border: 2px black solid;">
-            <caption>Test Table</caption>
+        <table>
+            <caption>schedule</caption>
             <tr>
                 <th></th>
                 <th>Monday</th>
@@ -26,20 +27,32 @@
             </tr>
             <tr>
                 <th>Morning</th>
-                <td rowspan="2" colspan="5" style="background-color: yellow;">School</td>
-                <td>Sleeping In!</td>
-                <td>Sleeping In!</td>
+                <td colspan="5">Open 8-12</td>
+                <td colspan="2">Open 10-12</td>
             </tr>
             <tr>
                 <th>Afternoon</th>
-                <td>Laundry</td>
-                <td>R&R</td>
+                <td colspan="7">Closed for lunch 12-1</td>
             </tr>
             <tr>
                 <th>Evening</th>
-                <td colspan="7" style="background-color: red;">Dinner</td>
+                <td colspan="7">Open 1-5 Fireworks every night from 5-5:30</td>
             </tr>
         </table>
+
+        <form class="contact">
+            <fieldset>
+                <legend>Contact Info</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form"/>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" class="form"/>
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="form"/>
+                <input type="submit" value="Submit"/>
+                <input type="reset"/>
+            </fieldset>
+        </form>
     </div>
 </body>
 
